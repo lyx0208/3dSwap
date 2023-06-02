@@ -1,2 +1,2 @@
-# 3dSwap
-Project page for "3D-aware Face Swapping" in CVPR 2023
+# 3D-Aware Face Swapping
+Code will be released soon after CVPR 2023.
