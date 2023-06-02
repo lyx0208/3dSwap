@@ -16,13 +16,6 @@ Face swapping is an important research topic in computer vision with wide applic
   <source src="assets/media/slide_show.mp4" type="video/mp4">
 </video>
 
-# Deformable Neural Radiance Fields
-![lego.png](assets/media/lego.png)
-
-# Synthetic Dynamic Human
-![human_synth.png](assets/media/human_synth.png)
-In comparison with [animatable nerf](https://zju3dv.github.io/animatable_nerf/).
-
 # Project Demo
 <video width="850" playsinline autoplay loop preload muted controls>
   <source src="assets/media/demo.mp4" type="video/mp4">
