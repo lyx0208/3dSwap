@@ -30,10 +30,12 @@ In comparison with [animatable nerf](https://zju3dv.github.io/animatable_nerf/).
 
 # Citation
 ```text
-@inproceedings{peng2021CageNeRF，
-    title={CageNeRF: Cage-based Neural Radiance Fields for Genrenlized 3D Deformation and Animation},
-    author={Peng, Yicong and Yan, Yichao and Liu, Shenqi and Cheng, Yuhao and Guan, Shanyan and Pan, Bowen and Zhai, Guangtao and Yang, Xiaokang},
-    booktitle={Thirty-Sixth Conference on Neural Information Processing Systems},
-    year={2022}
+@InProceedings{Li_2023_CVPR,
+    author    = {Li, Yixuan and Ma, Chao and Yan, Yichao and Zhu, Wenhan and Yang, Xiaokang},
+    title     = {3D-Aware Face Swapping},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2023},
+    pages     = {12705-12714}
 }
 ```
