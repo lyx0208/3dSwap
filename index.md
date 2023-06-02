@@ -16,7 +16,7 @@ Face swapping is an important research topic in computer vision with wide applic
   <source src="assets/media/slide_show.mp4" type="video/mp4">
 </video>
 
-# Project Demo
+# Demo
 <video width="850" playsinline autoplay loop preload muted controls>
   <source src="assets/media/demo.mp4" type="video/mp4">
 </video>
