@@ -16,7 +16,12 @@ Face swapping is an important research topic in computer vision with wide applic
   <source src="assets/media/slide_show.mp4" type="video/mp4">
 </video>
 
-# Demo
+# Results
+## Different Genders
+![framework.png](assets/media/supp_gender.png)
+
+
+# Demo Video
 <video width="850" playsinline autoplay loop preload muted controls>
   <source src="assets/media/demo.mp4" type="video/mp4">
 </video>
