@@ -1,6 +1,5 @@
-title: Cage-based Neural Radiance Fields for Genrenlized 3D Deformation and Animation
-description: Yicong Peng <sup>1</sup>, Yichao Yan <sup>2</sup>, Shenqi Liu <sup>2</sup>, 
-  Yuhao Cheng<sup>2</sup>, Shanyan Guan <sup>2</sup>,<br> Bowen Pan <sup>3</sup>, Guangtao Zhai <sup>1</sup>, Xiaokang Yang <sup>2</sup>
+title: 3D-Aware Face Swapping
+description: Yixuan Li, Chao Ma, Yichao Yan, Wenhan Zhu and Xiaokang Yang
 show_downloads: false
 google_analytics:
 theme: jekyll-theme-cayman
