@@ -18,8 +18,22 @@ Face swapping is an important research topic in computer vision with wide applic
 
 # Results
 ## Different Genders
-![framework.png](assets/media/supp_gender.png)
+![gender.png](assets/media/supp_gender.png)
 
+## Large Age Gaps
+![age.png](assets/media/supp_age.png)
+
+## Different Skin Colors
+![skin_color.png](assets/media/supp_skin_color.png)
+
+## Distinguishing Lighting Conditions
+![lighting.png](assets/media/supp_lighting.png)
+
+## Large Pose Variations
+![pose.png](assets/media/supp_pose.png)
+
+# Multi-view Results
+![multiview.png](assets/media/supp_multiview.png)
 
 # Demo Video
 <video width="850" playsinline autoplay loop preload muted controls>
