@@ -1,4 +1,4 @@
-## 3D-Aware Face Swapping<br><sub>Official PyTorch implementation of the CVPR 2023 paper</sub>
+## 3D-Aware Face Swapping<br><sub>Official PyTorch implementation of the CVPR 2023 paper "3D-Aware Face Swapping"</sub>
 
 ![Teaser image](images/teaser.png)
 
@@ -8,10 +8,10 @@ Yixuan Li, Chao Ma, Yichao Yan, Wenhan Zhu, Xiaokang Yang<br>
 Abstract: *Face swapping is an important research topic in computer vision with wide applications in entertainment and privacy protection. Existing methods directly learn to swap 2D facial images, taking no account of the geometric information of human faces. In the presence of large pose variance between the source and the target faces, there always exist undesirable artifacts on the swapped face. In this paper, we present a novel 3D-aware face swapping method that generates high-fidelity and multi-view-consistent swapped faces from single-view source and target images. To achieve this, we take advantage of the strong geometry and texture prior of 3D human faces, where the 2D faces are projected into the latent space of a 3D generative model. By disentangling the identity and attribute features in the latent space, we succeed in swapping faces in a 3D-aware manner, being robust to pose variations while transferring fine-grained facial details. Extensive experiments demonstrate the superiority of our 3D-aware face swapping framework in terms of visual quality, identity similarity, and multi-view consistency. Project page: https://lyx0208.github.io/3dSwap*
 
 ## Requirements
-
-* See [environment.yaml](./environment.yaml) for python dependencies.  You can use the following commands with Anaconda to create and activate your Python environment:
-  - `conda env create -f environment.yaml`
+* Create and activate the Python environment:
+  - `conda create -n 3dSwap python=3.8`
   - `conda activate 3dSwap`
+  - `pip install -r requirements.txt`
 
 ## Datasets preparation
 * We preprocess the images from the original FFHQ and CelebA-HD dataset with the data preprocessing code from **[EG3D](https://github.com/NVlabs/eg3d)**, including re-cropping the images and extracting according camera poses.
@@ -34,7 +34,21 @@ If you only want to perform the 3D GAN inversion without face swapping, run:
 ```.bash
 python run_inversion.py
 ```
+## Training
 
+First, download the preprocessed FFHQ dataset from [here](https://drive.google.com/drive/folders/1p8LPK23ZTSztZ2noPiz-XWcefvqe-f0r?usp=sharing) and put it under the "datasets" folder.
+
+To train the inversion module, run:
+
+```.bash
+python -m torch.distributed.launch --nproc_per_node=4 --master_port=12345 train_inversion.py --exp_dir=inversion
+```
+
+To train the faceswapping module, run:
+
+```.bash
+python -m torch.distributed.launch --nproc_per_node=4 --master_port=12345 train_faceswap.py --exp_dir=faceswap
+```
 
 ## Citation
 
@@ -50,5 +64,6 @@ python run_inversion.py
 ```
 
 ## Acknowledgements
-* Our code is developed base on: 
+* Our code is developed based on: 
     - https://github.com/NVlabs/eg3d
+    - https://github.com/eladrich/pixel2style2pixel
