@@ -67,3 +67,4 @@ python -m torch.distributed.launch --nproc_per_node=4 --master_port=12345 train_
 * Our code is developed based on: 
     - https://github.com/NVlabs/eg3d
     - https://github.com/eladrich/pixel2style2pixel
+* [2024.4.8] Thanks [Phillip Chananda](https://github.com/takuphilchan) for uploading the ipynb file of 3dSwap!
