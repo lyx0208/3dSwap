@@ -244,9 +244,7 @@ class FaceSwapCoach:
                 mrc.data[:] = sigmas
 
     def run(self, args):
-        # in_name, out_name = str(args.from_index), str(args.to_index)
-        in_name = 'gsy_src_2'
-        out_name = 'gsy_tar_1'
+        in_name, out_name = str(args.from_index), str(args.to_index)
         name = in_name + '_' + out_name
 
         in_image = load_image(osp.join(args.dataroot, 'final_crops', in_name + '.jpg'), self.device)
